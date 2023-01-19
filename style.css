@@ -1,1 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+/* Goodle Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #01141f; */
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 200px;
+    background-color: #01141f;
+    position: fixed;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo span {
+    font-weight: 200;
+    color: #f2a70c;
+}
+
+.navlink a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid #f2a70c;
+    padding: 8px 20px;
+    border-radius: 7px;
+}
+.navlink a:hover {
+    background-color: #f2a70c;
+    border: 2px solid #f2a70c;
+}
+
+/* .hero_container {
+
+} */
