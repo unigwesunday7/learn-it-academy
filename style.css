@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 200px;
+    padding: 20px 100px;
     background-color: #01141f;
     position: fixed;
 }
@@ -81,11 +81,11 @@ body {
 .button {
     text-decoration: none;
     color: #fff;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     background-color: transparent;
     border: 1px solid #f2a70c;
     border-radius: 7px;
-    padding: 10px 30px ;
+    padding: 10px 20px ;
     margin-top: 40px;
 }
 
