@@ -22,7 +22,6 @@ body {
   background-color: rgba(1, 20, 31, 1);
   position: fixed;
   z-index: 1;
-
 }
 
 nav .logo {
@@ -67,7 +66,6 @@ nav .logo span {
   align-items: center;
   justify-content: center;
   gap: 20px;
-
 }
 
 .header_container::before {
@@ -122,42 +120,123 @@ nav .logo span {
 
 /* Main Section */
 .skill_container {
-    height: 90vh;
-    padding: 120px 220px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
+  height: 90vh;
+  padding: 120px 220px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
 
 .stroke {
-    background-color: #f2a70c;
-    width: 130px;
-    height: 5px;
-    margin-bottom: 10px;
+  background-color: #f2a70c;
+  width: 130px;
+  height: 4px;
+  margin-bottom: 15px;
 }
 
 .skills_title h2 {
-    font-size: 1.7rem;
-    margin-bottom: 20px;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
 }
 
 .skills_title ul {
-    line-height: 2rem;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 30px;
+  line-height: 2rem;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 .skills_title ul li {
-    list-style: circle;
-    margin-left: 18px;
+  list-style: circle;
+  margin-left: 18px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(216, 233, 239);
+}
+
+footer .contact-section {
+  height: 90vh;
+  padding: 100px 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+footer .contact-section h2 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+footer .contact-section p {
+  font-size: 16px;
+  line-height: 1.8rem;
+}
+
+/* ############### Footer contact form ################ */
+footer form {
+    font-size: 16px;
+    padding: 50px 40px;
+  /* background-color: rgb(255, 255, 255); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+footer form label {
+    margin-bottom: 5;
+}
+footer form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 14px 10px;
+  border: none;
+  border-radius: 4px;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+
+footer form input:focus {
+    outline: none;
+  }
+  
+footer form input[type="submit"] {
+  background-color: #f2a70c;
+  color: #fff;
+  cursor: pointer;
+}
+footer form input[type="submit"]:hover {
+  background-color: #de9400;
+}
+
+
+footer .social {
+    width: 100%;
+    padding: 20px 100px ;
+    background-color: rgb(1, 20, 31);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f2a70c;
+    font-size: .8rem;
+}
+
+footer .social .fa-brands {
+    color: #f2a70c;
+    font-size: 20px;
+}
+footer .social .fa-facebook {
+    margin-right: 10px;
 }
 
 
 
 
-/* Animation keyframes */
+
+
+
+/*  ################ Animation keyframes ################# */
 @keyframes fade-in {
   0% {
     opacity: 0;
