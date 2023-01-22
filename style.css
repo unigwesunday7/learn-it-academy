@@ -20,8 +20,7 @@ body {
   justify-content: space-between;
   padding: 20px 100px;
   background-color: rgba(1, 20, 31, 1);
-  position: fixed;
-  z-index: 1;
+  /* position: fixed; */
 }
 
 nav .logo {
@@ -56,7 +55,7 @@ nav .logo span {
 
 /* Header Section */
 .header_container {
-  /* position: relative; */
+  position: relative;
   overflow: hidden;
   width: 100%;
   height: 100vh;
@@ -92,6 +91,10 @@ nav .logo span {
   font-size: 3rem;
   line-height: 1.5rem;
 }
+.hero_sub-container {
+    width: 60%;
+    padding: 0 90px;
+}
 .hero_subtext {
   animation-delay: 0.8s;
   color: #fff;
@@ -99,6 +102,7 @@ nav .logo span {
   font-size: 0.9rem;
   line-height: 1.5rem;
   font-weight: 400;
+  /* padding: 0 70px; */
 }
 
 .button {
@@ -120,7 +124,7 @@ nav .logo span {
 
 /* Main Section */
 .skill_container {
-  height: 90vh;
+  height: 100vh;
   padding: 120px 220px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -154,12 +158,12 @@ nav .logo span {
 
 footer {
   width: 100%;
-  background-color: rgb(216, 233, 239);
+  background-color: rgb(242, 245, 246);
 }
 
 footer .contact-section {
-  height: 90vh;
-  padding: 100px 200px;
+  height: 100vh;
+  padding: 120px 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -180,7 +184,7 @@ footer .contact-section p {
 /* ############### Footer contact form ################ */
 footer form {
     font-size: 16px;
-    padding: 50px 40px;
+    padding: 30px 40px;
   /* background-color: rgb(255, 255, 255); */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -194,7 +198,7 @@ footer form input {
   border: none;
   border-radius: 4px;
   border-bottom-style: groove;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 footer form input:focus {
@@ -257,4 +261,106 @@ footer .social .fa-facebook {
     opacity: 1;
     transform: none;
   }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    body {
+        min-width: 400px;
+    }
+    .navbar {
+        display: none;
+    }
+    .header_container {
+        padding: 0 20px;
+        /* height: 100vh; */
+    }
+    .hero_text {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .hero_sub-container {
+        width: 100%;
+        padding: 0px;
+    }
+    .hero_subtext {
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+
+
+
+
+    .skill_container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 60px 10px;
+        gap: 40px;
+    }
+
+    .stroke {
+        width: 80px;
+        margin-bottom: 10px;
+      }
+      
+      .skills_title h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      
+      .skills_title ul {
+        line-height: 1.6rem;
+        margin-bottom: 30px;
+      }
+
+      .btn-skill {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .skill_btn {
+        padding: 8px 10px;
+      }
+
+
+      footer {
+        padding-top: 20px;
+      }
+
+    footer .contact-section {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    footer .contact-section div {
+        padding: 0px 10px;
+      }
+
+    footer .contact-section p {
+        line-height: 1.6rem;
+        text-align: justify;
+      }
+
+      footer form {
+        font-size: 16px;
+        padding: 20px 10px 10px;
+    }
+
+    footer .social {
+        padding: 10px 30px ;
+        font-size: .6rem;
+    }
+    
+    footer .social .fa-brands {
+        color: #f2a70c;
+        font-size: 15px;
+    }
+    footer .social .fa-facebook {
+        margin-right: 10px;
+    }
+    
 }
