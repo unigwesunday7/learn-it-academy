@@ -1,6 +1,5 @@
 /* Goodle Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
@@ -265,10 +264,10 @@ footer .social .fa-facebook {
 
 
 
-
+/* ############### Media Query #################### */
 @media screen and (max-width: 400px) {
     body {
-        min-width: 400px;
+        min-width: 375px;
     }
     .navbar {
         display: none;
@@ -290,9 +289,6 @@ footer .social .fa-facebook {
         font-size: 14px;
         line-height: 1.4rem;
     }
-
-
-
 
     .skill_container {
         display: flex;
